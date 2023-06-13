@@ -28,7 +28,7 @@ app.get("/", function(req,res){
 
 
 app.get("/about", function(req,res){
-    res.render('About')
+    res.render('about')
 })
 
 app.get("/contact", function(req,res){
