@@ -1,0 +1,33 @@
+
+<%- include("partials/header") -%>
+    <div class="blog-body">
+        <div class="blog-post">
+            <h2>HOME</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                 elit. Placeat voluptatibus sapiente cum eligendi blanditiis assumenda corporis ratione labore accusantium nemo exercitationem voluptatem at dicta, aut vel velit vero iure ex.
+                 Lorem, ipsum dolor sit amet consectetur adipisicing
+                 elit. Placeat voluptatibus sapiente cum eligendi blanditiis assumenda corporis ratione labore accusantium nemo exercitationem voluptatem at dicta, aut vel velit vero iure ex.
+                 Lorem, ipsum dolor sit amet consectetur adipisicing
+                 elit. Placeat voluptatibus sapiente cum eligendi blanditiis assumenda corporis ratione labore accusantium nemo exercitationem voluptatem at dicta, aut vel velit vero iure ex.</p>
+        </div>
+
+        <%postblog.forEach(function(post){%>
+            <div class="blog-post" id="blog-post2">
+           
+                <h2><%=post.heading.toUpperCase()%></h2>  
+    
+                <p class="blogstr" autocapitalize="sentence">
+                <%=post.body.slice(0,300) + " ...."%> <a href="/post/<%=post.heading%>">Readmore</a>
+               
+                </p>
+               
+           
+        </div>
+        <%})%>
+        
+     
+    </div>
+    <%- include("partials/footer") -%>
+
+
+    
